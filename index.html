@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js' type='text/javascript'></script>
+  <style type="text/css">
+  body {
+    margin: 0 auto;
+  }
+  .satu {
+    background-color: #34495E;
+  }
+  .dua {
+    background-color: #049372;
+  }
+  .tiga {
+    background-color: #E87E04;
+  }
+  .empat {
+    background-color: #D91E18;
+  }
+  .lima {
+    background-color: #2980b9;
+  }
+  .enam {
+    background-color: #9b59b6;
+  }
+  .tujuh {
+    background-color: #c0392b;
+  }
+  .delapan {
+    background-color: #7f8c8d;
+  }
+  .sembilan {
+    background-color: #1abc9c;
+  }
+  .sepuluh {
+    background-color: #f39c12;
+  }
+  .satu, .dua, .tiga, .empat, .lima, .enam, .tujuh, .delapan, .sembilan, .sepuluh {
+    height: 150px;
+    margin: 5px;
+    color: #fff;
+    float: left;
+    padding: 15px;
+  }
+  </style>
+</head>
+<body>
+<div class="post"><h2>Tutorial CSS : Kumpulan Efek Membuat Underline</h2></div>
+<div class="post"><h2>Tutorial CSS : Mengubah Warna Select Text / Blok Text</h2></div>
+<div class="post"><h2>Tutorial CSS : Membuat Efek Zoom Pada Gambar</h2></div>
+<div class="post"><h2>Membuat Tombol "Back To Top" di Website/Blog</h2></div>
+<div class="post"><h2>Cara Mudah Mendapatkan Dollar Di Internet</h2></div>
+<div class="post"><h2>Belajar PHP - Membuat Website Jejaring Sosial Part 3</h2></div>
+<div class="post"><h2>Belajar PHP - Membuat Website Jejaring Sosial part 2</h2></div>
+<div class="post"><h2>Cara Merubah Font / Tulisan Pada Blogger atau Website</h2></div>
+<div class="post"><h2>Tutorial PHP : Cara Membuat Captcha di PHP</h2></div>
+<div class="post"><h2>Pemula Belajar</h2></div>
+<script type="text/javascript">
+$(document).ready(function(){
+    var classes = ["satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh"];
+
+    $(".post").each(function(){
+        $(this).addClass(classes[~~(Math.random()*classes.length)]);
+    });
+});
+$(function() {
+    $.each($('.post'), function(i, post) {
+        var max = 100,
+            min = 200,
+            rand = (Math.floor(Math.random() * max) + min);
+        
+        $(post).css('width', rand);
+    });
+});
+</script>
+<div style="clear: both"></div>
+</body>
+</html>
